@@ -1,7 +1,6 @@
 var registerBlockType = wp.blocks.registerBlockType;
 var el = wp.element.createElement
 
-
 var BlockControls = wp.editor.BlockControls
 var InspectorControls = wp.editor.InspectorControls
 var AlignmentToolbar = wp.editor.AlignmentToolbar
