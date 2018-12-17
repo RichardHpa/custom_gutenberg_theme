@@ -211,34 +211,34 @@
                 href: attributes.facebookURL,
                 target: '_blank'
               },
-              el('i', { className: 'fa fa-facebook' })
+              el('i', { className: 'fab fa-facebook' })
               ),
               attributes.twitterURL && el('a', {
                 className: 'social-link',
                 href: attributes.twitterURL,
                 target: '_blank'
               },
-              el('i', { className: 'fa fa-twitter' })
+              el('i', { className: 'fab fa-twitter' })
               ),
               attributes.instagramURL && el('a', {
                 className: 'social-link',
                 href: attributes.instagramURL,
                 target: '_blank'
               },
-              el('i', { className: 'fa fa-instagram' })
+              el('i', { className: 'fab fa-instagram' })
               ),
               attributes.linkedURL && el('a', { className: 'social-link',
                 href: attributes.linkedURL,
                 target: '_blank'
               },
-              el('i', { className: 'fa fa-linkedin' })
+              el('i', { className: 'fab fa-linkedin' })
               ),
               attributes.emailAddress && el('a', {
                 className: 'social-link',
                 href: 'mailto:' + attributes.emailAddress,
                 target: '_blank'
               },
-              el('i', { className: 'fa fa-envelope' })
+              el('i', { className: 'fab fa-envelope' })
               )
             )
           )
@@ -279,35 +279,35 @@
                 href: attributes.facebookURL,
                 target: '_blank'
               },
-              el('i', { className: 'fa fa-facebook' })
+              el('i', { className: 'fab fa-facebook' })
               ),
               attributes.twitterURL && el('a', {
                 className: 'social-link',
                 href: attributes.twitterURL,
                 target: '_blank'
               },
-              el('i', { className: 'fa fa-twitter' })
+              el('i', { className: 'fab fa-twitter' })
               ),
               attributes.instagramURL && el('a', {
                 className: 'social-link',
                 href: attributes.instagramURL,
                 target: '_blank'
               },
-              el('i', { className: 'fa fa-instagram' })
+              el('i', { className: 'fab fa-instagram' })
               ),
               attributes.linkedURL && el('a', {
                 className: 'social-link',
                 href: attributes.linkedURL,
                 target: '_blank'
               },
-              el('i', { className: 'fa fa-linkedin' })
+              el('i', { className: 'fab fa-linkedin' })
               ),
               attributes.emailAddress && el('a', {
                 className: 'social-link',
                 href: 'mailto:' + attributes.emailAddress,
                 target: '_blank'
               },
-              el('i', { className: 'fa fa-envelope' })
+              el('i', { className: 'fab fa-envelope' })
               )
             )
           )

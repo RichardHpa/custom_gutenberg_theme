@@ -1,6 +1,6 @@
 /**
  * ----------------------------------------------------------------------------
- * Editor CSS - AlternateCards
+ * Frontend CSS
  * ----------------------------------------------------------------------------
  */
 
@@ -18,27 +18,13 @@
 .wp-block-organic-profile-block .organic-profile-image {
 	display: flex;
 	align-items: center;
-}
-.wp-block-organic-profile-block .organic-profile-image.image-inactive {
-	background: #f4f4f4;
-	width: 50%;
-	border: 1px solid #dddddd;
-}
-.wp-block-organic-profile-block .organic-profile-image.image-active {
 	background-size: cover;
 	background-position: center;
-	max-width: 50%;
+	width: 50%;
 }
-.wp-block-organic-profile-block .organic-profile-image button {
-	margin: 0 auto;
-}
-.wp-block-organic-profile-block .organic-profile-image button.image-button {
-	line-height: 0;
-	padding: 0px;
-}
-.wp-block-organic-profile-block .organic-profile-image button.image-button img {
+.wp-block-organic-profile-block .organic-profile-image img {
 	opacity: 0;
-	margin: 0;
+	margin: -9999px;
 }
 .wp-block-organic-profile-block .organic-profile-content {
 	width: 50%;
@@ -46,16 +32,35 @@
 	padding: 36px;
 	box-sizing: border-box;
 }
-.wp-block-organic-profile-block .organic-profile-content h5.editor-rich-text__tinymce {
+.wp-block-organic-profile-block .organic-profile-content h3 {
+	margin: 0px;
+	padding: 0px;
+}
+.wp-block-organic-profile-block .organic-profile-content h5 {
 	color: rgba(0, 0, 0, 0.4);
+	text-transform: uppercase;
+	margin: 0px;
+	padding: 8px 0px;
+}
+.wp-block-organic-profile-block .organic-profile-content p {
+	line-height: 1.6;
+	margin: 0px;
+	padding: 8px 0px;
 }
 .wp-block-organic-profile-block .organic-profile-social {
-	margin-top: 12px;
+	padding-top: 12px;
+}
+.wp-block-organic-profile-block .organic-profile-social:empty {
+	display: none;
 }
 .wp-block-organic-profile-block .organic-profile-social .social-link {
 	color: rgba(0, 0, 0, 0.24);
 	padding: 6px 12px;
+	font-size: 18px;
+	text-decoration: none;
 	border-left: 1px solid rgba(0, 0, 0, 0.12);
+	border-bottom: none;
+	box-shadow: none;
 }
 .wp-block-organic-profile-block .organic-profile-social .social-link:hover {
 	color: rgba(0, 0, 0, 1);
@@ -64,7 +69,6 @@
 	border: none;
 }
 
-
-.wp-block.editor-block-list__block:nth-child(even) .organic-profile-image{
+.wp-block-organic-profile-block:nth-child(even) .organic-profile-image{
 	order: 2;
 }

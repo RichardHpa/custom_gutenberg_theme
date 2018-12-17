@@ -5,7 +5,7 @@ function adjust_width_block(){
 		// Gutenberg is not active.
 		return;
 	}
-    
+
     //Width Adjust Block
     wp_register_script(
         'adjust-width-block-script',
@@ -30,12 +30,6 @@ function adjust_width_block(){
         filemtime(get_stylesheet_directory() . '/blocks/widthAdjust/style.css')
     );
 
-    wp_enqueue_style(
-        'adjust-width-block-fontawesome',
-        get_template_directory_uri( 'font-awesome.css', __FILE__ ),
-        array(),
-        '4.7.0'
-    );
 
     register_block_type( 'wa/block', array(
 		'editor_script' => 'adjust-width-block-script',
@@ -79,6 +73,43 @@ function adjust_width_block(){
 		'style'         => 'organic-profile-block-frontend-style',
 	) );
 
+
+
+
+
+
+
+
+    // Scripts.
+	wp_register_script(
+		'post-list-block-script', // Handle.
+		get_template_directory_uri() . '/blocks/postLists/block.js',
+		array( 'wp-blocks', 'wp-components', 'wp-element', 'wp-i18n', 'wp-editor', 'wp-api' ), // Dependencies, defined above.
+        filemtime(get_stylesheet_directory() . '/blocks/postLists/block.js'),
+		true
+	);
+
+	// Styles.
+	wp_register_style(
+		'post-list-block-editor-style', // Handle.
+		get_template_directory_uri() . '/blocks/postLists/editor.css',
+		array( 'wp-edit-blocks' ), // Dependency to include the CSS after it.
+        filemtime(get_stylesheet_directory() . '/blocks/postLists/style.css')
+	);
+	wp_register_style(
+		'post-list-block-frontend-style', // Handle.
+		get_template_directory_uri() . '/blocks/postLists/style.css',
+		array(), // Dependency to include the CSS after it.
+		filemtime(get_stylesheet_directory() . '/blocks/postLists/style.css')
+	);
+
+	// Here we actually register the block with WP, again using our namespacing.
+	// We also specify the editor script to be used in the Gutenberg interface.
+	register_block_type( 'lp/block', array(
+		'editor_script' => 'post-list-block-script',
+		'editor_style'  => 'post-list-block-editor-style',
+		'style'         => 'post-list-block-frontend-style',
+	) );
 
 
 
