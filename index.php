@@ -8,7 +8,7 @@
                 </div>
             </div>
         </div>
-        <div class="">
+        <div class="gutenbergContent">
             <?php the_content(); ?>
         </div>
     <?php endwhile; ?>
